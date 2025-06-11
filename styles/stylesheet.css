@@ -1,0 +1,93 @@
+:root {
+    --primary-blue: hsl(193, 38%, 86%);
+    --primary-green: hsl(150, 100%, 66%);
+
+    --neutral-blue-600: hsl(217, 19%, 38%);
+    --neutral-blue-900: hsl(217, 19%, 24%);
+    --neutral-blue-950: hsl(218, 23%, 16%);
+}
+
+*,
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--neutral-blue-950);
+    max-width: 630px;
+    margin: 10rem auto;
+}
+
+button {
+    all: unset;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--primary-green);
+    cursor: pointer;
+}
+
+h5,
+p {
+    text-align: center;
+}
+
+h5 {
+    color: var(--primary-green);
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--primary-blue);
+    font-size: 20px;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-blue-900);
+    border-radius: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.pattern-divider {
+    margin-inline: 1rem;
+}
+
+.manrope-extrabold {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--primary-blue)
+}
+
+.attribution a {
+    color: var(--primary-green)
+}
